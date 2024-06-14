@@ -6,12 +6,16 @@
 
 [node name="Node2D" type="Node2D"]
 
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_q84tc")]
+position = Vector2(110, 310)
+
 [node name="Node2D" parent="." instance=ExtResource("2_a2ws2")]
 position = Vector2(892, 310)
 
-[node name="CanvasLayer" parent="." instance=ExtResource("3_1q4xd")]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Body" parent="." instance=ExtResource("1_q84tc")]
-position = Vector2(221, 403)
-
-[connection signal="MySignal" from="Body" to="CanvasLayer" method="_on_signal"]
+[node name="Control" parent="CanvasLayer" instance=ExtResource("3_1q4xd")]
+offset_left = -96.0
+offset_top = 430.0
+offset_right = -96.0
+offset_bottom = 430.0

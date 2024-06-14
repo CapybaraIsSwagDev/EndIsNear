@@ -1,29 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://bidqxq3mf08qh"]
 
 [ext_resource type="Texture2D" uid="uid://c5ouuimjteonh" path="res://assets/PlayerShip.png" id="1_0yk3g"]
-
-[sub_resource type="GDScript" id="GDScript_couuu"]
-resource_name = "PlayerMovemnt"
-script/source = "extends CharacterBody2D
-
-
-
-var speed = 400  # move speed in pixels/sec
-var rotation_speed = 1.5  # turning speed in radians/sec
-
-func _physics_process(delta):
-	var move_input = Input.get_axis(\"down\", \"up\")
-	var rotation_direction = Input.get_axis(\"left\", \"right\")
-	velocity = transform.x * move_input * speed
-	rotation += rotation_direction * rotation_speed * delta
-	move_and_slide()
-"
+[ext_resource type="Script" path="res://player.gd" id="1_4pb27"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hoe66"]
 size = Vector2(26, 30)
 
 [node name="Body" type="CharacterBody2D"]
-script = SubResource("GDScript_couuu")
+script = ExtResource("1_4pb27")
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(15, 0)
