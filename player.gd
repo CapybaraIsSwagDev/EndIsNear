@@ -1,10 +1,10 @@
 extends CharacterBody2D
 class_name player
 
-signal MySignal(Oxygen,Energy)
+signal UpdateStats(Oxygen,Energy)
 
-@export var Oxygen = 100
-@export var Energy = 69
+var Oxygen = 100
+var Energy = 69
 
 
 var speed = 400  # move speed in pixels/sec
@@ -12,7 +12,7 @@ var rotation_speed = 1.5  # turning speed in radians/sec
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	emit_signal("MySignal",Oxygen,Energy)
+	emit_signal("UpdateStats",Oxygen,Energy)
 
 func _physics_process(delta):
 	var move_input = Input.get_axis("down", "up")

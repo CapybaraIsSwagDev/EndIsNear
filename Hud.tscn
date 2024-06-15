@@ -7,12 +7,12 @@ script = ExtResource("1_qybmk")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 offset_right = 40.0
-offset_bottom = 50.0
+offset_bottom = 40.0
 
-[node name="Oxygen" type="Label" parent="VBoxContainer"]
+[node name="OxygenLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 text = "Oxygen"
 
-[node name="Energy" type="Label" parent="VBoxContainer"]
+[node name="EnergyLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 text = "Energy"
