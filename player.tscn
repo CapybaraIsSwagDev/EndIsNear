@@ -16,7 +16,7 @@ shape = SubResource("RectangleShape2D_hoe66")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 rotation = 1.5708
-scale = Vector2(5, 5)
 texture = ExtResource("1_0yk3g")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)

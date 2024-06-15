@@ -12,6 +12,6 @@ position = Vector2(892, 310)
 [node name="CanvasLayer" parent="." instance=ExtResource("3_1q4xd")]
 
 [node name="Body" parent="." instance=ExtResource("1_q84tc")]
-position = Vector2(221, 403)
+position = Vector2(567, 311)
 
 [connection signal="UpdateStats" from="Body" to="CanvasLayer" method="_on_body_update_stats"]

@@ -16,3 +16,7 @@ text = "Oxygen"
 [node name="EnergyLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 text = "Energy"
+
+[node name="debug" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Energy"
