@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://01p1ru2etqko"]
+
+[ext_resource type="PackedScene" uid="uid://cpjmt54drujdg" path="res://Player.tscn" id="1_v8q0m"]
+[ext_resource type="Texture2D" uid="uid://dvnltshtoybm7" path="res://icon.svg" id="2_hamaf"]
+
+[node name="World" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_v8q0m")]
+position = Vector2(491, 227)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1023, 486)
+texture = ExtResource("2_hamaf")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(892, 489)
+texture = ExtResource("2_hamaf")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(1148, 481)
+texture = ExtResource("2_hamaf")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(1028, 348)
+texture = ExtResource("2_hamaf")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(1025, 209)
+texture = ExtResource("2_hamaf")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(51, 585)
+texture = ExtResource("2_hamaf")
